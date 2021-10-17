@@ -49,8 +49,8 @@ Want some support on the challenge? [Join our Slack community](https://www.front
 
 ### Links
 
-- Solution URL: [Social media dashboard with theme switcher Solution](https://www.frontendmentor.io/challenges/social-media-dashboard-with-theme-switcher-6oY8ozp_H/hub/htnl5-css3-flex-grid-sass-javascript-LAgWqOXBF)
-- Live Site URL: [Live Site](https://social-media-dashboard-site.netlify.app/)
+- Solution URL: [Time Tracking Dashboard Solution](https://www.frontendmentor.io/challenges/time-tracking-dashboard-UIQ7167Jw/hub/html5-css-sass-gsap-javascript-1S2FebBnm)
+- Live Site URL: [Live Site](https://time-tracking-dashboard-site.netlify.app/)
 
 ## My process
 
