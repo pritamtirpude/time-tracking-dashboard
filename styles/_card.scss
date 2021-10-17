@@ -1,0 +1,217 @@
+.dashboard-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  row-gap: 2rem;
+  column-gap: 2rem;
+  padding: 10rem 10rem;
+
+  .profile-card-container {
+    border-radius: 2rem;
+    overflow: hidden;
+    grid-row: 1 / span 2;
+    background-color: $neutral_dark_blue_color;
+    box-shadow: 0px 10px 10px rgba($color: #000000, $alpha: 0.2),
+      0px 20px 40px rgba($color: #000000, $alpha: 0.2);
+
+    .profile-card {
+      padding: 3rem 3rem 8rem;
+      background-color: $primary_blue_color;
+      border: 2rem;
+      border-radius: 2rem;
+
+      .avatar {
+        width: 65px;
+        height: 65px;
+        border-radius: 50%;
+        background-color: $white_color;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+          width: 60px;
+          height: 60px;
+          object-fit: contain;
+        }
+      }
+
+      .name {
+        margin-top: 2rem;
+
+        small {
+          display: inline-block;
+          color: $neutral_pale_blue_color;
+        }
+
+        h1 {
+          font-size: 4rem;
+          font-weight: 300;
+          color: $white_color;
+        }
+      }
+    }
+
+    .weeks {
+      background-color: $neutral_dark_blue_color;
+      padding: 2rem 3rem;
+      overflow: hidden;
+
+      ul {
+        list-style-type: none;
+
+        li {
+          margin: 1rem 0;
+          color: $neutral_pale_blue_color;
+          cursor: pointer;
+        }
+
+        li.active {
+          color: $white_color;
+        }
+      }
+    }
+  }
+
+  .stats-card {
+    position: relative;
+    border-radius: 2rem;
+    overflow: hidden;
+    box-shadow: 0px 10px 10px rgba($color: #000000, $alpha: 0.2),
+      0px 20px 40px rgba($color: #000000, $alpha: 0.2);
+
+    .stat-bg {
+      background: url("../images/icon-work.svg") $primary_light_red_work_color
+        no-repeat top right;
+      background-position-x: 90%;
+      height: 10vh;
+    }
+
+    .stats-details {
+      padding: 2rem 3rem;
+      background-color: $neutral_dark_blue_color;
+      position: absolute;
+      border-radius: 2rem;
+      top: 40px;
+      left: 0;
+      width: 100%;
+      height: 100%;
+
+      .stats-title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        h3 {
+          color: $white_color;
+          font-size: 2rem;
+          font-weight: 400;
+        }
+
+        strong {
+          display: inline-block;
+          color: $neutral_pale_blue_color;
+
+          &:hover {
+            color: $white_color;
+          }
+        }
+      }
+
+      .stats-hours {
+        margin-top: 3rem;
+
+        h2 {
+          font-size: 5rem;
+          font-weight: 300;
+          color: $white_color;
+        }
+
+        span {
+          display: inline-block;
+          color: $neutral_pale_blue_color;
+          font-size: small;
+        }
+      }
+    }
+
+    &:hover {
+      cursor: pointer;
+      filter: brightness(120%);
+    }
+  }
+}
+
+.stats-card:nth-of-type(3) {
+  .stat-bg {
+    background: url("../images/icon-play.svg") $primary_soft_blue_play_color
+      no-repeat top right;
+    background-position-x: 90%;
+    height: 10vh;
+  }
+}
+
+.stats-card:nth-of-type(4) {
+  .stat-bg {
+    background: url("../images/icon-study.svg") $primary_light_red_study_color
+      no-repeat top right;
+    background-position-x: 90%;
+    height: 10vh;
+  }
+}
+
+.stats-card:nth-of-type(5) {
+  .stat-bg {
+    background: url("../images/icon-exercise.svg")
+      $primary_lime_green_exercise_color no-repeat top right;
+    background-position-x: 90%;
+    height: 10vh;
+  }
+}
+
+.stats-card:nth-of-type(6) {
+  .stat-bg {
+    background: url("../images/icon-social.svg") $primary_violet_social_color
+      no-repeat top right;
+    background-position-x: 90%;
+    height: 10vh;
+  }
+}
+
+.stats-card:nth-of-type(7) {
+  .stat-bg {
+    background: url("../images/icon-self-care.svg")
+      $primary_soft_orange_self_care_color no-repeat top right;
+    background-position-x: 90%;
+    height: 10vh;
+  }
+}
+
+footer {
+  padding: 2rem 0rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .icon {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    a {
+      margin: 0rem 1rem;
+      text-decoration: none;
+      color: $primary_light_red_work_color;
+    }
+  }
+
+  .fas {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: $primary_blue_color;
+    color: $white_color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

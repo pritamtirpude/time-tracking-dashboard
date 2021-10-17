@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Frontend Mentor | Time tracking dashboard</title>
+  </head>
+  <body>
+    <section class="dashboard-container">
+      <div class="profile-card-container">
+        <div class="profile-card">
+          <div class="avatar">
+            <img src="./images/image-jeremy.png" alt="Jeremy Robson" />
+          </div>
+
+          <div class="name">
+            <small>Report for</small>
+            <h1>Jeremy Robson</h1>
+          </div>
+        </div>
+        <div class="weeks">
+          <ul>
+            <li class="dailyButton">Daily</li>
+            <li class="weeklyButton">Weekly</li>
+            <li class="monthlyButton">Monthly</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="stats-card">
+        <div class="stat-bg"></div>
+        <div class="stats-details">
+          <div class="stats-title">
+            <h3 id="title">Work</h3>
+            <strong>. . .</strong>
+          </div>
+          <div class="stats-hours">
+            <h2 id="hours">32hrs</h2>
+            <span>Last Week - <span id="last-week">5hrs</span></span>
+          </div>
+        </div>
+      </div>
+      <div class="stats-card">
+        <div class="stat-bg"></div>
+        <div class="stats-details">
+          <div class="stats-title">
+            <h3 id="title">Play</h3>
+            <strong>. . .</strong>
+          </div>
+          <div class="stats-hours">
+            <h2 id="hours">32hrs</h2>
+            <span>Last Week - <span id="last-week">5hrs</span></span>
+          </div>
+        </div>
+      </div>
+      <div class="stats-card">
+        <div class="stat-bg"></div>
+        <div class="stats-details">
+          <div class="stats-title">
+            <h3 id="title">Study</h3>
+            <strong>. . .</strong>
+          </div>
+          <div class="stats-hours">
+            <h2 id="hours">32hrs</h2>
+            <span>Last Week - <span id="last-week">5hrs</span></span>
+          </div>
+        </div>
+      </div>
+      <div class="stats-card">
+        <div class="stat-bg"></div>
+        <div class="stats-details">
+          <div class="stats-title">
+            <h3 id="title">Exercise</h3>
+            <strong>. . .</strong>
+          </div>
+          <div class="stats-hours">
+            <h2 id="hours">32hrs</h2>
+            <span>Last Week - <span id="last-week">5hrs</span></span>
+          </div>
+        </div>
+      </div>
+      <div class="stats-card">
+        <div class="stat-bg"></div>
+        <div class="stats-details">
+          <div class="stats-title">
+            <h3 id="title">Social</h3>
+            <strong>. . .</strong>
+          </div>
+          <div class="stats-hours">
+            <h2 id="hours">32hrs</h2>
+            <span>Last Week - <span id="last-week">5hrs</span></span>
+          </div>
+        </div>
+      </div>
+      <div class="stats-card">
+        <div class="stat-bg"></div>
+        <div class="stats-details">
+          <div class="stats-title">
+            <h3 id="title">Self Care</h3>
+            <strong>. . .</strong>
+          </div>
+          <div class="stats-hours">
+            <h2 id="hours">32hrs</h2>
+            <span>Last Week - <span id="last-week">5hrs</span></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="author">
+        <div class="icon">
+          <i class="fas fa-code"></i>
+          <a href="https://github.com/pritamtirpude" target="_blank"
+            >Pritam Tirpude</a
+          >
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

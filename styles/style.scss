@@ -1,0 +1,42 @@
+@import "global";
+@import "card";
+
+@media screen and (max-width: 768px) {
+  .dashboard-container {
+    padding: 5rem 1rem;
+    .profile-card-container {
+      .profile-card {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding-bottom: 4rem;
+
+        .name {
+          margin-top: 0rem;
+          margin-left: 2rem;
+
+          h1 {
+            font-size: 3rem;
+          }
+        }
+      }
+
+      .weeks {
+        ul {
+          display: flex;
+          justify-content: space-evenly;
+        }
+      }
+    }
+    .stats-card {
+      height: 200px;
+      .stats-details {
+        .stats-hours {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+      }
+    }
+  }
+}

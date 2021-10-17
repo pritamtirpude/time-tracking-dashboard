@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+$primary_blue_color: hsl(246, 80%, 60%);
+$primary_light_red_work_color: hsl(15, 100%, 70%);
+$primary_soft_blue_play_color: hsl(195, 74%, 62%);
+$primary_light_red_study_color: hsl(348, 100%, 68%);
+$primary_lime_green_exercise_color: hsl(145, 58%, 55%);
+$primary_violet_social_color: hsl(264, 64%, 52%);
+$primary_soft_orange_self_care_color: hsl(43, 84%, 65%);
+$neutral_very_dark_blue_color: hsl(226, 43%, 10%);
+$neutral_dark_blue_color: hsl(235, 46%, 20%);
+$neutral_desaturated_blue_color: hsl(235, 45%, 61%);
+$neutral_pale_blue_color: hsl(236, 100%, 87%);
+$white_color: hsl(0, 0%, 100%);
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.8rem;
+  font-family: "Rubik", sans-serif;
+  background-color: $neutral_very_dark_blue_color;
+  min-height: 100vh;
+}
