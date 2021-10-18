@@ -22,10 +22,8 @@
       }
 
       .weeks {
-        ul {
-          display: flex;
-          justify-content: space-evenly;
-        }
+        flex-direction: row;
+        justify-content: space-between;
       }
     }
     .stats-card {

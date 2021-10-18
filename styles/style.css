@@ -89,20 +89,34 @@ body {
 .dashboard-container .profile-card-container .weeks {
   background-color: #1c1f4a;
   padding: 2rem 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   overflow: hidden;
 }
 
-.dashboard-container .profile-card-container .weeks ul {
-  list-style-type: none;
-}
-
-.dashboard-container .profile-card-container .weeks ul li {
-  margin: 1rem 0;
+.dashboard-container .profile-card-container .weeks button {
+  border: none;
+  background: transparent;
+  font-family: inherit;
+  font-size: 1.8rem;
   color: #bdc1ff;
   cursor: pointer;
+  margin: 1rem 0rem;
 }
 
-.dashboard-container .profile-card-container .weeks ul li.active {
+.dashboard-container .profile-card-container .weeks button:focus {
+  outline: none;
+}
+
+.dashboard-container .profile-card-container .weeks .active {
   color: white;
 }
 
@@ -117,6 +131,10 @@ body {
 .dashboard-container .stats-card .stat-bg {
   background: url("../images/icon-work.svg") #ff8c66 no-repeat top right;
   background-position-x: 90%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
   height: 10vh;
 }
 
@@ -168,7 +186,7 @@ body {
   color: white;
 }
 
-.dashboard-container .stats-card .stats-details .stats-hours span {
+.dashboard-container .stats-card .stats-details .stats-hours small {
   display: inline-block;
   color: #bdc1ff;
   font-size: small;
@@ -280,13 +298,14 @@ footer .fas {
   .dashboard-container .profile-card-container .profile-card .name h1 {
     font-size: 3rem;
   }
-  .dashboard-container .profile-card-container .weeks ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+  .dashboard-container .profile-card-container .weeks {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .dashboard-container .stats-card {
     height: 200px;

@@ -1,12 +1,12 @@
-const hours = document.querySelectorAll("#hours");
-const lastWeek = document.querySelectorAll("#last-week");
-const dailyButton = document.querySelector(".dailyButton");
-const weeklyButton = document.querySelector(".weeklyButton");
-const monthlyButton = document.querySelector(".monthlyButton");
+const hours = document.querySelectorAll(".hours");
+const lastWeek = document.querySelectorAll(".last-week");
+const dailyButton = document.getElementById("dailyButton");
+const weeklyButton = document.getElementById("weeklyButton");
+const monthlyButton = document.getElementById("monthlyButton");
 const profileCardContainer = document.querySelector(".profile-card-container");
 const statsCard = document.querySelectorAll(".stats-card");
 const profileCard = document.querySelector(".profile-card");
-const weeks = document.querySelectorAll(".weeks ul li");
+const weeks = document.querySelectorAll(".weeks button");
 
 const fetchStatistics = async () => {
   const { data } = await axios.get("./data.json");
@@ -21,8 +21,8 @@ const onLoad = () => {
 const getDailyStatistics = (data) => {
   for (let index = 0; index < hours.length; index++) {
     data.map((dataStats, i) => {
-      hours[i].textContent = dataStats.timeframes.daily.current;
-      lastWeek[i].textContent = dataStats.timeframes.daily.previous;
+      hours[i].textContent = dataStats.timeframes.daily.current + "hrs";
+      lastWeek[i].textContent = dataStats.timeframes.daily.previous + "hrs";
     });
   }
 };
@@ -30,8 +30,8 @@ const getDailyStatistics = (data) => {
 const getWeeklyStatistics = (data) => {
   for (let index = 0; index < hours.length; index++) {
     data.map((dataStats, i) => {
-      hours[i].textContent = dataStats.timeframes.weekly.current;
-      lastWeek[i].textContent = dataStats.timeframes.weekly.previous;
+      hours[i].textContent = dataStats.timeframes.weekly.current + "hrs";
+      lastWeek[i].textContent = dataStats.timeframes.weekly.previous + "hrs";
     });
   }
 };
@@ -39,8 +39,8 @@ const getWeeklyStatistics = (data) => {
 const getMonthlyStatistics = (data) => {
   for (let index = 0; index < hours.length; index++) {
     data.map((dataStats, i) => {
-      hours[i].textContent = dataStats.timeframes.monthly.current;
-      lastWeek[i].textContent = dataStats.timeframes.monthly.previous;
+      hours[i].textContent = dataStats.timeframes.monthly.current + "hrs";
+      lastWeek[i].textContent = dataStats.timeframes.monthly.previous + "hrs";
     });
   }
 };
